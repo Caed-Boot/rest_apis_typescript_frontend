@@ -34,7 +34,8 @@ export async function action({request, params} : ActionFunctionArgs) {
         await updateProduct(data, +params.id)
         return redirect('/')
     }
-        
+    
+    return null
 }
 
 const availabilityOptions = [
