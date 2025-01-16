@@ -15,6 +15,7 @@ export async function action({params} : ActionFunctionArgs) {
         return redirect('/')
     }
 
+    return null
 }
 
 export default function ProductDetails({product} : ProductDetailsProps) {

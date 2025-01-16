@@ -13,6 +13,9 @@ export async function loader ({params} : LoaderFunctionArgs) {
         }        
         return product
     }
+
+    // Retorna null o un objeto vacio si no hay datos que cargar
+    return null
 }
 
 export async function action({request, params} : ActionFunctionArgs) {
